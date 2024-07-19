@@ -1,6 +1,6 @@
 """Tests for the quakefeed.my_module module."""
 import pytest
-from quakefeed.my_module import hello
+from src.quakefeed.my_module import hello
 
 
 def test_hello():

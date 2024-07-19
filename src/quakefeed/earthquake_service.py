@@ -112,13 +112,12 @@ class EarthquakeDataHandler:
 
         for change in changes:
             log_id, date, latitude, longitude = change
-            # Perform your external operation
+            
+            # external operation placeholder
             print(f"Start downloading images for ({latitude}, {longitude}) and ({date})")
 
-            # Mark the entry as processed
             cursor.execute("UPDATE changes_log SET processed = 1 WHERE id = ?", (log_id,))
 
-        # Commit the changes and close the connection
         conn.commit()
         conn.close()
 
